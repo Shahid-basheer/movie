@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
+  background-color: black;
+  color: white;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.style-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
